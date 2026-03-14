@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agentic Commerce Demo</title>
+  <style>
+    body{
+      font-family: Arial;
+      text-align:center;
+      padding:40px;
+      background:#f5f5f5;
+    }
+
+    .box{
+      background:white;
+      padding:30px;
+      border-radius:10px;
+      max-width:500px;
+      margin:auto;
+      box-shadow:0 0 10px rgba(0,0,0,.1);
+    }
+
+    button{
+      padding:12px 20px;
+      font-size:16px;
+      background:#0073aa;
+      color:white;
+      border:none;
+      border-radius:6px;
+      cursor:pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="box">
+<h2>Agentic Commerce Demo</h2>
+<p>Simulate a shopping agent completing a purchase.</p>
+
+<button onclick="runDemo()">Run Demo</button>
+
+<p id="result"></p>
+
+</div>
+
+<script>
+function runDemo(){
+document.getElementById("result").innerHTML =
+"Agent detected intent → Generated token → Completed checkout.";
+}
+</script>
+
+</body>
+</html>
